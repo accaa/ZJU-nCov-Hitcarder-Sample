@@ -18,6 +18,8 @@ jobs:
             pushplus_token: PUSHPLUS_TOKEN
             serverchan_key: SERVERCHAN_KEY
     steps:
+      - name: install python libs
+        run: pip3 install ddddocr
       - name: Working
         uses: accaa/zju-ncov-hitcarder@master
         with:
